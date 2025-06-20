@@ -14,7 +14,7 @@ run:
 		--rm \
 		--name app.node \
 		-v .:/app  \
-		-p 8081:8081 \
+		-p 8081:8082 \
 		--net=host \
 		app/node
 

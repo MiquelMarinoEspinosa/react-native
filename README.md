@@ -26,12 +26,6 @@ Create project skeleton
 npx create-expo-app@latest --template blank <folder name>
 ```
 
-For `CoreComponents`
-
-```
-npx create-expo-app@latest CoreComponents --template blank@sdk-49
-```
-
 Run the project
 
 ```
