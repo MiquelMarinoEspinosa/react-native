@@ -23,7 +23,14 @@ make shell
 Create project skeleton
 
 ```
-npx create-expo-app@latest --template blank ./
+npx create-expo-app@latest --template blank <folder name>
+```
+
+Run the project
+
+```
+cd <folder name>
+expo start
 ```
 
 Set up
