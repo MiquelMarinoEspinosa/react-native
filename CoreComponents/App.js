@@ -6,6 +6,7 @@ import {
   Modal,
   Pressable,
   ScrollView,
+  StatusBar,
   Text,
   View,
 } from "react-native";
@@ -15,7 +16,8 @@ export default function App() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   return (
     <View style={{ flex: 1, backgroundColor: "plum", padding: 60 }}>
-      <Button
+      <StatusBar backgroundColor="lightgreen" barStyle="dark-content" />
+      {/* <Button
         title="Press"
         onPress={() => setIsModalVisible(true)}
         color="midnightblue"
@@ -34,7 +36,7 @@ export default function App() {
             onPress={() => setIsModalVisible(false)}
           />
         </View>
-      </Modal>
+      </Modal> */}
     </View>
   );
 }
