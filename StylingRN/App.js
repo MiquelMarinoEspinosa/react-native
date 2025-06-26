@@ -4,7 +4,14 @@ export default function App() {
   return (
     <View style={styles.container}>
       {/* <Text style={styles.title}>StyleSheet API</Text> */}
-      <View style={[styles.lightblueBg, styles.box]}>
+      <View
+        style={[
+          styles.lightblueBg,
+          styles.box,
+          styles.boxShadow,
+          styles.androidShadow,
+        ]}
+      >
         <Text style={{ borderRadius: 5, backgroundColor: "red" }}>
           Lightblue box
         </Text>
@@ -19,8 +26,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: "plum", padding: 60 },
   box: {
-    width: 100,
-    height: 100,
+    width: 250,
+    height: 250,
     // padding: 10,
     paddingHorizontal: 10,
     paddingVertical: 20,
@@ -34,5 +41,17 @@ const styles = StyleSheet.create({
   },
   lightgreenBg: {
     backgroundColor: "lightgreen",
+  },
+  boxShadow: {
+    shadowColor: "#333333",
+    shadowOffset: {
+      width: 6,
+      height: 6,
+    },
+    shadowOpacity: 0.6,
+    shadowRadius: 4,
+  },
+  androidShadow: {
+    elevation: 10,
   },
 });
